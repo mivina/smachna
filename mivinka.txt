@@ -36,3 +36,7 @@ slav напішіть хтось шось сюди щоб я знав що це 
 Перед цим я створила матрицю де по стовпчикам унікальні символи, по рядкам- назви файлів, на перетині- к-ть входжень
 рядок 36 --- я таке не зможу зробити)))))
 в мене теж мяко кажучи херовий код
+buf_df = pd.DataFrame(f[0].stack().value_counts()) тут в f тупо лежить табличка аналогічна тестовій
+buf_df2 = pd.DataFrame(f[1].stack().value_counts())
+...
+result = pd.concat([buf_df, buf_df2, buf_df3, buf_df4, buf_df5, buf_df6, buf_df7, buf_df8, buf_df9, buf_df10], axis=1, join='inner')
