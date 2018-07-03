@@ -40,4 +40,5 @@ buf_df = pd.DataFrame(f[0].stack().value_counts()) тут в f тупо лежи
 buf_df2 = pd.DataFrame(f[1].stack().value_counts())
 ...
 result = pd.concat([buf_df, buf_df2, buf_df3, buf_df4, buf_df5, buf_df6, buf_df7, buf_df8, buf_df9, buf_df10], axis=1, join='inner')
-ви шарите як зробити, щоб розбити це 4-значне число на два двузначних?
+ви шарите як зробити, щоб розбити це 4-значне число на два двузначних? --- по ходу тільки ручками
+слав - мені KMeans видав якусь фігню
